@@ -1,0 +1,12 @@
+hour = int(input("請輸入停車時數："))
+
+if hour <= 2:
+    fee = 30
+elif hour <= 4:
+    fee = 50
+elif hour <= 6:
+    fee = 80
+else:
+    fee = 80 + (hour - 6) * 100
+
+print("應繳費用：", fee, "元")
