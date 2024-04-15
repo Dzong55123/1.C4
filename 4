@@ -1,0 +1,11 @@
+# 宣告一個大小為10的陣列，並設置初始值
+fibonacci = [0, 1]
+
+# 使用迴圈計算費波那契數列的前10個數
+for i in range(2, 10):
+    fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
+
+# 逐行顯示前10個費波那契數
+print("前10個費波那契數：")
+for num in fibonacci:
+    print(num)
