@@ -1,0 +1,16 @@
+count_over_60 = 0
+total_over_60 = 0
+
+for i in range(10):
+    num = int(input(f"請輸入第 {i+1} 個整數："))
+    if num > 60:
+        count_over_60 += 1
+        total_over_60 += num
+
+if count_over_60 > 0:
+    average_over_60 = total_over_60 / count_over_60
+    print("大於60的數字有", count_over_60, "個")
+    print("這些數字的總和為", total_over_60)
+    print("這些數字的平均值為", average_over_60)
+else:
+    print("沒有大於60的數字")
