@@ -1,0 +1,19 @@
+num_students = int(input("請輸入學生人數："))
+
+# 創建一個空的成績列表
+scores = []
+
+# 依次輸入每位學生的成績並將其加入成績列表中
+for i in range(num_students):
+    score = float(input(f"請輸入第 {i+1} 位學生的成績："))
+    scores.append(score)
+
+# 計算總分
+total_score = sum(scores)
+
+# 計算平均值
+average_score = total_score / num_students
+
+print("學生人數：", num_students)
+print("總分：", total_score)
+print("平均值：", average_score)
